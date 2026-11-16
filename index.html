@@ -107,24 +107,14 @@
     font-weight:400;
   }
 
-  .gantt-frame{
-    max-width:1100px;
-    border:1px dashed var(--line);
-    padding:3rem 1.5rem;
-    text-align:center;
-    color:var(--muted);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:0.95rem;
-    background:repeating-linear-gradient(135deg, transparent, transparent 12px, color-mix(in srgb, var(--line) 40%, transparent) 12px, color-mix(in srgb, var(--line) 40%, transparent) 13px);
+  .team .role{ color:var(--muted); }
+
+  .gantt-figure{ margin:0; max-width:1100px; }
+  .gantt-figure img{
+    display:block; width:100%; height:auto;
+    border:1px solid var(--line); background:#fff;
   }
-  .gantt-frame span{
-    display:block;
-    background:var(--paper);
-    padding:1.2rem 1rem;
-    border:1px solid var(--line);
-    max-width:420px;
-    margin:0 auto;
-  }
+
 
   /* Rough design section */
   .design-figure{
@@ -166,25 +156,25 @@
 <section>
   <h2>Team Members</h2>
   <ul class="team">
-    <li>Omar Bhatti</li>
-    <li>Jacob Lewis</li>
-    <li>Evan Li</li>
-    <li>Gurdeep Sahota</li>
-    <li>Bryson Vanloo</li>
+    <li>Omar Bhatti <span class="role">— Software Lead</span></li>
+    <li>Jacob Lewis <span class="role">— Electrical Lead</span></li>
+    <li>Evan Li <span class="role">— Mechanical Lead</span></li>
+    <li>Gurdeep Sahota <span class="role">— Electrical Lead</span></li>
+    <li>Bryson Vanloo <span class="role">— Mechanical Lead</span></li>
   </ul>
 </section>
 
 <section>
   <h2>Project Timeline</h2>
-  <div class="gantt-frame">
-    <span>Gantt chart goes here<br>replace this block with your chart image or embed</span>
-  </div>
+  <figure class="gantt-figure">
+    <img src="gantt-chart.png" alt="Gantt chart of the project timeline in days, from design selection through the final report due at about day 165.">
+  </figure>
 </section>
 
 <section id="rough-design">
   <h2>Rough Design</h2>
   <figure class="design-figure">
-    <img src="design-sketch.png" alt="Hand-drawn top and side views of the proposed design: a rotary disc under a machine cover with a microscope peek hole and sample access lid, and a side view showing the camera, eyepiece, single objective lens, hatch, rotary disc, electrical control box, and motor with gearbox.">
+    <img src="RoughDesign1.png" alt="Hand-drawn top and side views of the proposed design: a rotary disc under a machine cover with a microscope peek hole and sample access lid, and a side view showing the camera, eyepiece, single objective lens, hatch, rotary disc, electrical control box, and motor with gearbox.">
   </figure>
   <div class="design-text">
     <!-- WRITE YOUR DESIGN DESCRIPTION BELOW. Add more <p> blocks as needed. -->
